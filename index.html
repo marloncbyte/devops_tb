@@ -1,9 +1,236 @@
 <!DOCTYPE html>
-<header>
-</header>
-<body> 
-    <center>
-    <h1> Usando projeto na Turma B - novo status</h1>
-    <h1> novo conteudo para manutenção</h1>
-    </center>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kung Fu Panda</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3e6c8;
+            color: #2b2118;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1d1d1d, #9b1c1c);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        nav {
+            background-color: #222;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #e5a800;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 25px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            color: #9b1c1c;
+            margin-bottom: 15px;
+        }
+
+        .personagens {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #f7f1df;
+            width: 200px;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid #d4af37;
+        }
+
+        .card h3 {
+            color: #8b0000;
+            margin-bottom: 8px;
+        }
+
+        .curiosidade {
+            background-color: #fff3cd;
+            border-left: 6px solid #e5a800;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 35px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🐼 Kung Fu Panda</h1>
+        <p>A incrível história de Po e sua jornada no Kung Fu</p>
+    </header>
+
+    <nav>
+        <a href="#historia">História</a>
+        <a href="#personagens">Personagens</a>
+        <a href="#curiosidades">Curiosidades</a>
+    </nav>
+
+    <main>
+
+        <section id="historia">
+            <h2>📖 História</h2>
+
+            <p>
+                <strong>Kung Fu Panda</strong> acompanha Po, um panda apaixonado por
+                kung fu que trabalha no restaurante de seu pai. Apesar de não parecer
+                um grande lutador no início, Po acaba sendo escolhido para cumprir
+                um importante destino.
+            </p>
+
+            <p>
+                Ao longo de sua jornada, ele aprende sobre disciplina, coragem,
+                amizade e principalmente sobre acreditar em si mesmo. Com a ajuda
+                do Mestre Shifu e dos Cinco Furiosos, Po começa a descobrir suas
+                próprias habilidades.
+            </p>
+        </section>
+
+        <section id="personagens">
+            <h2>🥋 Personagens</h2>
+
+            <div class="personagens">
+
+                <div class="card">
+                    <h3>🐼 Po</h3>
+                    <p>
+                        O protagonista da história. Um panda divertido,
+                        determinado e apaixonado por kung fu.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>🐯 Tigresa</h3>
+                    <p>
+                        Uma das integrantes dos Cinco Furiosos e uma
+                        grande guerreira.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>🐢 Mestre Oogway</h3>
+                    <p>
+                        Um sábio mestre que possui grande conhecimento
+                        sobre kung fu e sobre a vida.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>🐼 Mestre Shifu</h3>
+                    <p>
+                        O mestre responsável pelo treinamento de Po
+                        e dos Cinco Furiosos.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>🐵 Macaco</h3>
+                    <p>
+                        Um habilidoso integrante dos Cinco Furiosos,
+                        conhecido por sua agilidade.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="curiosidades" class="curiosidade">
+            <h2>⭐ Curiosidades</h2>
+
+            <ul>
+                <li>Po é um panda gigante.</li>
+                <li>A história mistura comédia, aventura e artes marciais.</li>
+                <li>Os Cinco Furiosos são formados por diferentes animais.</li>
+                <li>O filme apresenta várias mensagens sobre confiança e perseverança.</li>
+                <li>Kung Fu Panda foi produzido pela DreamWorks Animation.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>💡 Uma mensagem de Po</h2>
+
+            <p>
+                A história de Po mostra que não precisamos ser iguais aos outros
+                para alcançar nossos objetivos. Cada pessoa possui suas próprias
+                características e pode desenvolver seus talentos com dedicação,
+                coragem e persistência.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>🐼 Página sobre Kung Fu Panda | Feita com HTML e CSS</p>
+    </footer>
+
 </body>
+</html>
